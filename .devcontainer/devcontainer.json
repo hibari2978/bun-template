@@ -1,0 +1,22 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+  "dockerComposeFile": "./compose.yaml",
+  "service": "web",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "prettier.jsxSingleQuote": true,
+        "prettier.singleQuote": true,
+        "prettier.trailingComma": "all",
+        "prettier.prettierPath": "./node_modules/prettier",
+        "editor.formatOnSave": true,
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+      },
+      "extensions": ["esbenp.prettier-vscode"]
+    }
+  }
+}
